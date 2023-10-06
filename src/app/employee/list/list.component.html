@@ -1,0 +1,102 @@
+
+
+<section class="h-100 h-custom" >
+    <div class="container py-5 h-100">
+    
+      <h3><a routerLink="../add/basicinfor"> <span class="glyphicon glyphicon-plus"></span> New Employee</a></h3>
+<br>
+<br>
+
+<div class="container" >
+  <!-- upper pagination start -->   
+  <div class="pull-right">
+    <nav aria-label="...">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1"><b> Previous</b></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item ">
+          <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#"><b> Next</b></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- upper pagination end -->
+  <h1>Employee List</h1>  
+        
+        <table class="table table-bordered table-dark">
+            <thead>
+                <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Fist Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Birth Day</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Skill Name</th>
+                <th scope="col">Experience</th>
+                <th scope="col">Skill Level</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+
+
+                </tr>
+            </thead>
+           <tbody>
+            <tr *ngFor="let v of employees">
+        
+            <td scope="row">{{v.id}}</td>
+            <td>{{v.first_name}}</td>
+            <td>{{v.last_name}}</td>
+            <td>{{v.birth_date}}</td>
+            <td>{{v.phone_number}}</td>
+            <td>{{v.gender}}</td>
+            <td>{{v.skill_name}}</td>
+            <td>{{v.experience}}</td>
+            <td>{{v.skill_level}}</td>
+            <td>
+              <button class="btnEdit" (click)="employeById(v.id)">Edit</button>
+            </td>
+            <td >
+            <button (click)="deleteEpm(v)" class="btnDelete">Delete</button>
+            </td> 
+  
+
+         
+            </tr>
+           </tbody>
+        </table>
+ 
+  <!-- lower pagination start -->
+  <div class="pull-right">
+          <nav aria-label="..." >
+            <ul class="pagination" >
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1"><b>Previous</b></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item ">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"><b> Next</b></a>
+              </li>
+            </ul>
+          </nav>
+  </div>
+  <!-- lower pagination end -->
+        <br>
+  
+      </div>
+     
+    </div>
+  </section>
+
+  
+  

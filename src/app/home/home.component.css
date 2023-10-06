@@ -1,0 +1,36 @@
+
+
+
+
+.greendelta{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    margin-top: 180px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+
+    }
+
+h3{
+    font-size: 50px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+li{
+    list-style-type: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+
+.btn{
+    margin-left: 65px;
+    border-radius: 20px;
+    background-color:  rgb(238, 180, 105);
+    margin-left: 220px;
+}

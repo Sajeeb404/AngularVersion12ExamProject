@@ -1,0 +1,41 @@
+
+section{
+    background-color: white;
+    margin-top: 150px;
+    margin-left: 450px;
+
+}
+
+b{
+    margin-left: 100px;
+    font-size: 35px;
+    font-family: fantasy;
+    color: green;
+}
+
+.card-body{
+    background-color: rgb(205, 243, 205);
+    width: 350px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+
+.row{
+    margin-left: 50px;
+}
+
+#btn1{
+    margin-left: 65px;
+    border-radius: 20px;
+}
+
+#btn2{
+    margin-left: 65px;
+    border-radius: 20px;
+}
+
+.form-control{
+    border-radius: 20px;
+}
+

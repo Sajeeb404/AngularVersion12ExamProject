@@ -1,0 +1,57 @@
+
+<section>
+      <div class="card-body">
+              <!--  label for login form -->
+              <h3 ><b>Login Form</b></h3>
+
+              <form (ngSubmit)="submit()" [formGroup]="loginForm">
+
+              <!-- This div for userName *Start -->
+                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                  <div class="col-md-8">
+                    <div class="form-outline">
+                      <label class="form-label" for="idusername" name="">User Name</label>
+                      <input id="idusername" class="form-control" placeholder="User Name" formControlName="userName"/>
+              
+                      <div *ngIf="loginForm.get('userName')?.hasError('required') && loginForm.get('userName')?.touched">
+                        Username is required.
+                      </div>
+                      <div *ngIf="loginForm.get('userName')?.hasError('minlength') && loginForm.get('userName')?.touched">
+                        Username must be at least 3 characters.
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              <!-- This div for userName *End-->
+
+                <br>
+
+              <!-- This div for password *Start -->
+                <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                  <div class="col-md-8">
+                    <div class="form-outline">
+                      <label class="form-label" for="form3Example1ws">Password</label>
+                      <input type="password" id="form3Example1ws" class="form-control" formControlName="userP" placeholder="Password"/>
+
+                      <div *ngIf="loginForm.get('userP')?.hasError('required') && loginForm.get('userP')?.touched">
+                        Password is required.
+                      </div>
+                      <div *ngIf="loginForm.get('userP')?.hasError('minlength') && loginForm.get('userP')?.touched">
+                        Password must be at least 6 characters.
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              <!-- This div for password *End -->
+                <br />
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-success btn-md mb-1" id="btn1"> Sign in </button>
+
+                <a routerLink="../register" class="btn btn-success btn-md mb-1" id="btn2">Register</a>
+              </form>
+      </div>
+</section>
+
+

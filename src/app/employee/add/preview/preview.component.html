@@ -1,0 +1,154 @@
+
+
+<div class="home-content">
+  <div class="mainone">
+    <br />
+    <h3 class="text-center" style="font-size: 35px; color: white">
+      <B> Information Edit Forms </B>
+    </h3>
+    <br />
+<!-- form start hare -->
+    <form (ngSubmit)="confirmSubmit()">
+<!-- 1st body start hare -->
+      <div class="mainbody">
+<!-- 1st row start hare -->
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <label class="form-label" for="pfname">First Name</label>
+              <input [(ngModel)]="formBasicData.first_name" type="text" name="first_name" class="form-control form-control-sm"/>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <label class="form-label" for="plname">Last Name</label>
+              <input [(ngModel)]="formBasicData.last_name" type="text" name="last_name" class="form-control form-control-sm"/>
+            </div>
+          </div>
+        </div>
+<!-- 1st row end hare -->
+        <br />
+<!-- 2nd row start hare -->
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <label class="form-label" for="pbirthdate">Birth Day </label>
+              <input [(ngModel)]="formBasicData.birth_date" type="date" name="birth_date" class="form-control form-control-sm"/>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <label class="form-label" for="pphonenubmer">Phone Number </label>
+              <input [(ngModel)]="formBasicData.phone_number" type="tel" name="phone_number" class="form-control form-control-sm"/>
+            </div>
+          </div>
+        </div>
+<!-- 2nd row end hare -->
+
+        <br />
+<!-- 3rd row start hare -->
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <label class="form-label" for="pgender">Gender </label>
+            <br />
+            <input
+              type="radio"
+              id="idgender"
+              name="gender"
+              value="Male"
+              [(ngModel)]="formBasicData.gender"
+            />
+            <b style="font-size: 18px"> &nbsp;Male </b>
+            &nbsp; &nbsp; &nbsp;
+            <input
+              required
+              type="radio"
+              id="idgenders"
+              name="gender"
+              value="Female"
+              [(ngModel)]="formBasicData.gender"
+            />
+            <b style="font-size: 18px"> &nbsp;Female </b>
+  
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <label class="form-label" for="pskillname">Skill Name</label>
+              <input [(ngModel)]="formSkillData.skill_name" type="text" name="skill_name" class="form-control form-control-sm"/>
+            </div>
+          </div>
+
+        </div>
+<!-- 3rd row end hare -->
+<br>
+
+<!-- 4th row start hare -->
+<div class="row">
+
+  <div class="col-md-6 mb-4">
+    <div class="form-outline">
+      <label class="form-label" for="idpskilllevel">Skill Level </label>
+      <br>
+      <input
+      type="radio"
+      id="idpskilllevel"
+      name="skill_level"
+      value="Beginner"
+      [(ngModel)]="formSkillData.skill_level"
+    />
+    <b style="font-size: 18px"> &nbsp;Beginner </b>
+    &nbsp; &nbsp; &nbsp;
+    <input
+      required
+      type="radio"
+      id="idpskilllevel"
+      name="skill_level"
+      value="Intermediate"
+      [(ngModel)]="formSkillData.skill_level"
+    />
+    <b style="font-size: 18px"> &nbsp;Intermediate </b>
+    &nbsp; &nbsp; &nbsp;
+    <input
+      required
+      type="radio"
+      id="idpskilllevel"
+      name="skill_level"
+      value="Advanced"
+      [(ngModel)]="formSkillData.skill_level"
+    />
+    <b style="font-size: 18px"> &nbsp;Advanced </b>
+    </div>
+  </div>
+
+  <div class="col-md-6 mb-4">
+    <div class="form-outline">
+      <label class="form-label" for="pxperience">Experience</label>
+      <input [(ngModel)]="formSkillData.experience"  type="text" name="experience" class="form-control form-control-sm"/>
+    </div>
+  </div>
+
+
+</div>
+<!-- 4th row end hare -->
+</div>
+<!-- 1st body end hare -->     
+<br>  
+
+  <button class="btnconfirmsubmit" type="submit">Confirm Submit</button>
+    </form>
+    <!-- form start hare -->
+
+    <br />
+    <br />
+  </div>
+</div>
+
+
+
+
+
